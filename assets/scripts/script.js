@@ -56,7 +56,7 @@ function endTest() {
 		result.score +
 		" time: " +
 		result.time +
-		"<br> Enter your initial and click the Next button to store your result.";
+		"<br> Enter your name and see how you rank among other code super geniouses.";
 
 	var input = document.createElement("input");
 	input.type = "text";
@@ -151,7 +151,7 @@ if (btn) {
 				localStorage.setItem(init, JSON.stringify(result));
 			} else {
 				console.log(
-					"User didn't enter initials. Score won't be recorded"
+					"How can we remember you if you don't enter your name?"
 				);
 			}
 			bIsEnteringName = false;
