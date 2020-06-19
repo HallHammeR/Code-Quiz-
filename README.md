@@ -2,6 +2,8 @@
 
 A code quiz game for UR coding bootcamp
 Warning! EXTREMELY DIFFICULT!!
+Proceed with CAUTION!
+https://hallhammer.github.io/Code-Quiz-/.
 
 TEST YOUR MIGHT!
 
