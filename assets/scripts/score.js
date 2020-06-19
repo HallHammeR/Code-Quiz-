@@ -24,7 +24,7 @@ function ShowScores() {
 	var gridTitle = document.createElement("h1");
 	gridTitle.innerHTML = "Quiz Scores";
 	containerEl.appendChild(gridTitle);
-	// header
+
 	var rowEl = document.createElement("div");
 	rowEl.setAttribute("class", "row");
 	var colEl = document.createElement("div");
@@ -42,11 +42,9 @@ function ShowScores() {
 	containerEl.appendChild(rowEl);
 	var results = [];
 	for (var i = 0; i < localStorage.length; i++) {
-		// set iteration key name
 		var key = localStorage.key(i);
 		console.log(key);
 		if (key !== null) {
-			// use key name to retrieve the corresponding value
 			var value = localStorage.getItem(key);
 			console.log("Key: " + key + ", Value: " + value);
 			var scrTime = JSON.parse(value);

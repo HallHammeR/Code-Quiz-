@@ -35,7 +35,7 @@ function configurePage(IsTestInProgress) {
 	} else {
 		timeEl.textContent = "Time over!";
 		deleteExistingChoices();
-		//btn.textContent = "Start";
+
 		resetTime();
 		viewHSLinkEl.setAttribute("href", "index.html");
 		homeLinkEl.setAttribute("href", "scores.html");
@@ -46,11 +46,11 @@ function endTest() {
 	var remaining = secondsLeft;
 	clearInterval(timerInterval);
 	configurePage(false);
-	//ask user's name and record the score
+
 	bIsEnteringName = true;
-	//calculate the score
+
 	result = { score: correctAnswersCount, time: quizTime - remaining };
-	// questionTextEl.textContent = "Correct Answers: " + result.score + " time: " + result.time;
+
 	questionTextEl.innerHTML =
 		"Correct Answers: " +
 		result.score +
@@ -70,7 +70,7 @@ function ShowQuestion() {
 	if (qIndex < questions.length) {
 		var question = questions[qIndex];
 		questionTextEl.textContent = question.title;
-		//create a list of choices
+
 		for (var i = 0; i < question.choices.length; i++) {
 			var divRadio = document.createElement("div");
 			divRadio.setAttribute("class", "radio");
@@ -133,7 +133,6 @@ function processAnswer() {
 	}
 }
 function deleteExistingChoices() {
-	// Clear
 	answersDivEl.innerHTML = "";
 }
 
