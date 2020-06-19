@@ -1,11 +1,11 @@
 # Code-Quiz-
 
-A code quiz game for UR coding bootcamp
-Warning! EXTREMELY DIFFICULT!!
-Proceed with CAUTION!
-https://hallhammer.github.io/Code-Quiz-/.
+A code quiz game for UR coding bootcamp<br>
+Warning! EXTREMELY DIFFICULT!!<br>
+Proceed with CAUTION!<br>
+https://hallhammer.github.io/Code-Quiz-/.<br>
 
-TEST YOUR MIGHT!
+TEST YOUR MIGHT!<br>
 
 GIVEN I am taking a code quiz<br>
 WHEN I click the start button<br>
