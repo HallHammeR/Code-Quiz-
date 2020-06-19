@@ -13,7 +13,7 @@ function compare(a, b) {
 		if (a.time < b.time) {
 			result = 1;
 		} else {
-			result = -9;
+			result = -1;
 		}
 	}
 	return -1 * result;
@@ -42,9 +42,11 @@ function ShowScores() {
 	containerEl.appendChild(rowEl);
 	var results = [];
 	for (var i = 0; i < localStorage.length; i++) {
+		// set iteration key name
 		var key = localStorage.key(i);
 		console.log(key);
 		if (key !== null) {
+			// use key name to retrieve the corresponding value
 			var value = localStorage.getItem(key);
 			console.log("Key: " + key + ", Value: " + value);
 			var scrTime = JSON.parse(value);

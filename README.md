@@ -1,12 +1,9 @@
 # Code-Quiz-
 
 A code quiz game for UR coding bootcamp
+Warning! EXTREMELY DIFFICULT!!
 
-    >TEST YOUR MIGHT! <br />
-    				Answer thee these questions of code; and after completion
-    				thy scorepage shall load! <br />
-    				If thy code knowledge doth not shine; thine timelimit will
-    				decrease by nine!
+TEST YOUR MIGHT!
 
 GIVEN I am taking a code quiz<br>
 WHEN I click the start button<br>

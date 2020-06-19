@@ -14,7 +14,7 @@ var timerInterval;
 const quizTime = 50;
 var secondsLeft = quizTime;
 var result;
-var sndCorrect = new Audio("./assets/sounds/correct.wav");
+var sndCorrect = new Audio("./assets/sounds/Correct.wav");
 var sndWrong = new Audio("./assets/sounds/Wrong.wav");
 
 var qIndex = 0;
@@ -35,7 +35,7 @@ function configurePage(IsTestInProgress) {
 	} else {
 		timeEl.textContent = "Time over!";
 		deleteExistingChoices();
-
+		//btn.textContent = "Start";
 		resetTime();
 		viewHSLinkEl.setAttribute("href", "index.html");
 		homeLinkEl.setAttribute("href", "scores.html");
@@ -45,17 +45,18 @@ function configurePage(IsTestInProgress) {
 function endTest() {
 	var remaining = secondsLeft;
 	clearInterval(timerInterval);
-	configur;
+	configurePage(false);
+	//ask user's name and record the score
 	bIsEnteringName = true;
-
+	//calculate the score
 	result = { score: correctAnswersCount, time: quizTime - remaining };
-
+	// questionTextEl.textContent = "Correct Answers: " + result.score + " time: " + result.time;
 	questionTextEl.innerHTML =
 		"Correct Answers: " +
 		result.score +
 		" time: " +
 		result.time +
-		"<br> Enter your name and see where you rank among code geniouses!";
+		"<br> Enter your initial and click the Next button to store your result.";
 
 	var input = document.createElement("input");
 	input.type = "text";
@@ -69,7 +70,7 @@ function ShowQuestion() {
 	if (qIndex < questions.length) {
 		var question = questions[qIndex];
 		questionTextEl.textContent = question.title;
-
+		//create a list of choices
 		for (var i = 0; i < question.choices.length; i++) {
 			var divRadio = document.createElement("div");
 			divRadio.setAttribute("class", "radio");
@@ -104,6 +105,7 @@ function setTime() {
 }
 
 function processAnswer() {
+	//read the selected value
 	var selectedText = "";
 	var divRadios = answersDivEl.children;
 	for (var i = 0; i < divRadios.length; i++) {
@@ -126,7 +128,7 @@ function processAnswer() {
 		if (secondsLeft < 5) {
 			secondsLeft = 0;
 		} else {
-			secondsLeft = secondsLeft - 9;
+			secondsLeft = secondsLeft - 5;
 		}
 	}
 }
@@ -149,7 +151,9 @@ if (btn) {
 			if (init !== null && init !== "") {
 				localStorage.setItem(init, JSON.stringify(result));
 			} else {
-				console.log("Don't you want to record your score bro?");
+				console.log(
+					"User didn't enter initials. Score won't be recorded"
+				);
 			}
 			bIsEnteringName = false;
 			location.reload();
