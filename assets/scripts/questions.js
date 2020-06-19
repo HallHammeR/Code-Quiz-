@@ -1,47 +1,34 @@
 var questions = [
 	{
-		title: "Commonly used data types DO NOT include:",
-		choices: ["strings", "booleans", "alerts", "numbers"],
-		answer: "alerts",
+		title: "What year was JQuery invented?",
+		choices: ["2000", "1989", "2004", "2006"],
+		answer: "2006",
+	},
+	{
+		title: "Which of the following is NOT a coding language?",
+		choices: ["Rust", "Hack", "Erlang", "FrauBrucher"],
+		answer: "FrauBrucher",
+	},
+
+	{
+		title: "How many coders does it take to screw in a lightbulb?",
+		choices: ["10", "pi", "420", "undefined"],
+		answer: "undefined",
 	},
 	{
 		title:
-			"The condition in an if / else statement is enclosed within ____.",
+			"If tree(a) falls in the woods(c) does it make a sound(y)?",
+		choices: ["yes", "no", "maybe", "var y = a + b;"],
+		answer: "var y = a + b;",
+	},
+	{
+		title: "what is the airspeed velocity of an unladen swallow?",
 		choices: [
-			"quotes",
-			"curly brackets",
-			"parentheses",
-			"square brackets",
+			"African or European?",
+			"That isn't a code question",
+			"I don't know that",
+			"11 meters per second",
 		],
-		answer: "parentheses",
-	},
-	///etc.
-	{
-		title:
-			"What is the HTML tag under which one can write the JavaScript code?",
-		choices: ["javascript", "scripted", "script", "js"],
-		answer: "script",
-	},
-	{
-		title:
-			"Which of the following is the correct syntax to display an alert box using JavaScript?",
-		choices: [
-			"alertbox(“message”);",
-			"msg(“message”);",
-			"msgbox(“message”);",
-			"alert(“message”);",
-		],
-		answer: "alert(“message”);",
-	},
-	{
-		title:
-			"What is the correct syntax for referring to an external script ?",
-		choices: [
-			"script src=filename",
-			"script href=filename",
-			"script ref=filename",
-			"script name=filename",
-		],
-		answer: "script src=filename",
+		answer: "That isn't a code question",
 	},
 ];

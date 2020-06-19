@@ -35,7 +35,7 @@ function configurePage(IsTestInProgress) {
 	} else {
 		timeEl.textContent = "Time over!";
 		deleteExistingChoices();
-		//btn.textContent = "Start";
+
 		resetTime();
 		viewHSLinkEl.setAttribute("href", "index.html");
 		homeLinkEl.setAttribute("href", "scores.html");
@@ -45,18 +45,17 @@ function configurePage(IsTestInProgress) {
 function endTest() {
 	var remaining = secondsLeft;
 	clearInterval(timerInterval);
-	configurePage(false);
-	//ask user's name and record the score
+	configur;
 	bIsEnteringName = true;
-	//calculate the score
+
 	result = { score: correctAnswersCount, time: quizTime - remaining };
-	// questionTextEl.textContent = "Correct Answers: " + result.score + " time: " + result.time;
+
 	questionTextEl.innerHTML =
 		"Correct Answers: " +
 		result.score +
 		" time: " +
 		result.time +
-		"<br> Enter your initial and click the Next button to store your result.";
+		"<br> Enter your name and see where you rank among code geniouses!";
 
 	var input = document.createElement("input");
 	input.type = "text";
@@ -70,7 +69,7 @@ function ShowQuestion() {
 	if (qIndex < questions.length) {
 		var question = questions[qIndex];
 		questionTextEl.textContent = question.title;
-		//create a list of choices
+
 		for (var i = 0; i < question.choices.length; i++) {
 			var divRadio = document.createElement("div");
 			divRadio.setAttribute("class", "radio");
@@ -105,7 +104,6 @@ function setTime() {
 }
 
 function processAnswer() {
-	//read the selected value
 	var selectedText = "";
 	var divRadios = answersDivEl.children;
 	for (var i = 0; i < divRadios.length; i++) {
@@ -151,9 +149,7 @@ if (btn) {
 			if (init !== null && init !== "") {
 				localStorage.setItem(init, JSON.stringify(result));
 			} else {
-				console.log(
-					"User didn't enter initials. Score won't be recorded"
-				);
+				console.log("Don't you want to record your score bro?");
 			}
 			bIsEnteringName = false;
 			location.reload();
