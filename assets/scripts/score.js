@@ -13,7 +13,7 @@ function compare(a, b) {
 		if (a.time < b.time) {
 			result = 1;
 		} else {
-			result = -1;
+			result = -9;
 		}
 	}
 	return -1 * result;

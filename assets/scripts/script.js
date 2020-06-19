@@ -128,7 +128,7 @@ function processAnswer() {
 		if (secondsLeft < 5) {
 			secondsLeft = 0;
 		} else {
-			secondsLeft = secondsLeft - 5;
+			secondsLeft = secondsLeft - 9;
 		}
 	}
 }
