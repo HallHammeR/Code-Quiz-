@@ -5,10 +5,10 @@
 		<meta charset="utf-8" />
 		<meta
 			name="description"
-			content="Homework: Web APIs - Code Quiz"
+			content="Homework: Web APIs - Quiz Scores"
 		/>
 		<meta name="author" content="Siavash Ashkiani" />
-		<title>Code Quiz by Josh Hall</title>
+		<title>Homework: Web APIs - Quiz Scores - Siavash</title>
 		<link
 			rel="stylesheet"
 			href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -29,9 +29,7 @@
 	<body>
 		<header>
 			<nav class="navbar navbar-expand-lg navbar-light bg-light">
-				<a class="navbar-brand" href="#"
-					>Timer: Stopped - Click the start when ready.</a
-				>
+				<a class="navbar-brand" href="#">Timer: Stopped - </a>
 				<button
 					class="navbar-toggler"
 					type="button"
@@ -61,20 +59,12 @@
 		</header>
 
 		<div class="container">
-			<h1>Coding Quiz</h1>
-			<div id="divQuestion">
-				<p id="pQuestion"
-					>Try to answer the following code related questions within
-					the time limit. Keep in mind that an incorrect answer will
-					decrease your remaining time by 5 seconds.</p
-				>
-				<div id="divChoices"> </div>
-			</div>
-
-			<button type="button" class="btn btn-primary mt-3"
-				>Start</button
+			<h1>Quiz Scores</h1>
+		</div>
+		<div class="container">
+			<button type="button" class="btn btn-primary mt-3" id="btn"
+				>Take The Quiz</button
 			>
-			<div id="lastResult" class="mt-3"> </div>
 		</div>
 
 		<footer>
@@ -98,7 +88,6 @@
 			integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
 			crossorigin="anonymous"
 		></script>
-		<script src="assets/scripts/questions.js"></script>
-		<script src="assets/scripts/script.js"></script>
+		<script src="assets/scripts/score.js"></script>
 	</body>
 </html>

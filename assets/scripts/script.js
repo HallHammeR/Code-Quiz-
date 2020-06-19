@@ -14,7 +14,7 @@ var timerInterval;
 const quizTime = 50;
 var secondsLeft = quizTime;
 var result;
-var sndCorrect = new Audio("./assets/sounds/Correct.wav");
+var sndCorrect = new Audio("./assets/sounds/correct.wav");
 var sndWrong = new Audio("./assets/sounds/Wrong.wav");
 
 var qIndex = 0;
