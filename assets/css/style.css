@@ -2,9 +2,13 @@ h1,
 p,
 footer {
 	text-align: center;
+	font-family: "Permanent Marker";
+	color: white;
+	background-color: #209410;
+	font-size: xx-large;
 }
 footer,
 .fixed-bottom {
-	background-color: teal;
+	background-color: #209410;
 	color: white;
 }

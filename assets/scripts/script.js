@@ -157,7 +157,7 @@ if (btn) {
 			}
 			bIsEnteringName = false;
 			location.reload();
-			document.location.href = "scores.html";
+			document.location.href = "scorepage.html";
 		} else {
 			startTest();
 		}
