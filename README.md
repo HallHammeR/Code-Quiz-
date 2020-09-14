@@ -17,6 +17,6 @@ THEN time is subtracted from the clock<br>
 WHEN all questions are answered or the timer reaches 0<br>
 THEN the game is over<br>
 WHEN the game is over<br>
-THEN I can save my initials and score!!!<br>
+THEN I can save my initials and score!!!!!!<br>
 
 ![](inf.png)
